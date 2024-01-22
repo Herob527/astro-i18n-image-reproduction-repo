@@ -1,5 +1,7 @@
 ---
-
+import { Picture } from "astro:assets"
+import icon from "../assets/some_icon.svg"
+import cat from "../assets/cat.jpg"
 ---
 
 <html lang="en">
@@ -12,5 +14,7 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+    <Picture src={icon} alt="favicon" />
+    <Picture src={cat} alt="cat" />
 	</body>
 </html>
